@@ -38,60 +38,115 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/muli_bold"
-        android:text="Lista de sellos"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
-
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/muli_bold"
-        android:text="Nintendo Moblie"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button8" />
-
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/muli_bold"
-        android:text="Twitter de fire emblem heroes"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
-
-    <Button
+    <com.ornach.nobobutton.NoboButton
         android:id="@+id/button4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/muli_bold"
-        android:text="Lista de armas"
+        android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:nb_backgroundColor="#8B0000"
+        app:nb_borderColor="#FFFFFF"
+        app:nb_borderWidth="2dp"
+        app:nb_focusColor="#B83CC3"
+        app:nb_radius="5dp"
+        app:nb_text="Lista de armas"
+        app:nb_textAllCaps="true"
+        app:nb_textColor="#FFF" />
 
-    <Button
+
+    <com.ornach.nobobutton.NoboButton
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:nb_backgroundColor="#008000"
+        app:nb_borderColor="#FFFFFF"
+        app:nb_borderWidth="2dp"
+        app:nb_focusColor="#B83CC3"
+        app:nb_radius="5dp"
+        app:nb_text="Lista de hablidades"
+        app:nb_textAllCaps="true"
+        app:nb_textColor="#FFF" />
+
+    <com.ornach.nobobutton.NoboButton
+        android:id="@+id/button6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button5"
+        app:nb_backgroundColor="#000080"
+        app:nb_borderColor="#FFFFFF"
+        app:nb_borderWidth="2dp"
+        app:nb_focusColor="#B83CC3"
+        app:nb_radius="5dp"
+        app:nb_text="Lista de Sellos"
+        app:nb_textAllCaps="true"
+        app:nb_textColor="#FFF" />
+
+    <com.ornach.nobobutton.NoboButton
+        android:id="@+id/button8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:nb_backgroundColor="#1DA1F2"
+        app:nb_borderColor="#FFFFFF"
+        app:nb_borderWidth="2dp"
+        app:nb_focusColor="#B83CC3"
+        app:nb_radius="5dp"
+        app:nb_text="Twitter de fire Emblem Heroes"
+        app:nb_textAllCaps="true"
+        app:nb_textColor="#FFF" />
+
+
+    <com.ornach.nobobutton.NoboButton
+        android:id="@+id/button9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button8"
+        app:nb_backgroundColor="#FF0000"
+        app:nb_borderColor="#FFFFFF"
+        app:nb_borderWidth="2dp"
+        app:nb_focusColor="#B83CC3"
+        app:nb_radius="5dp"
+        app:nb_text="Canal de Youtube de Nintendo Mobile"
+        app:nb_textAllCaps="true"
+        app:nb_textColor="#FFF" />
+
+    <com.ornach.nobobutton.NoboButton
         android:id="@+id/button10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/muli_bold"
-        android:text="Feh Unit Builder"
+        android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button9" />
+        app:layout_constraintTop_toBottomOf="@+id/button9"
+        app:nb_backgroundColor="	#CCCC00"
+        app:nb_borderColor="#FFFFFF"
+        app:nb_borderWidth="2dp"
+        app:nb_focusColor="#B83CC3"
+        app:nb_radius="5dp"
+        app:nb_text="Feh Unit Builder"
+        app:nb_textAllCaps="true"
+        app:nb_textColor="#FFF" />
 
     <TextView
         android:id="@+id/textView6"
@@ -109,16 +164,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button6" />
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/muli_bold"
-        android:text="Lista de habilidades"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
 
     <ImageButton
         android:id="@+id/imageButton3"

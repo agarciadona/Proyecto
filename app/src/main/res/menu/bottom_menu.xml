@@ -4,20 +4,20 @@
     <item
         android:id="@+id/miscFragment"
         android:icon="@drawable/misc_icon"
-        android:title="Bottom 1" />
+        android:title="Varios" />
 
     <item
         android:id="@+id/listUnitsFragment"
         android:icon="@drawable/search_icon"
-        android:title="Bottom 2" />
+        android:title="Lista Unidades" />
 
     <item
         android:id="@+id/barracksFragment"
         android:icon="@drawable/barrack_icon"
-        android:title="Bottom 3" />
+        android:title="Barracones" />
 
     <item
         android:id="@+id/arenaFragment"
         android:icon="@drawable/arena_icon"
-        android:title="Bottom 4" />
+        android:title="Calculadora Coliseo" />
 </menu>
