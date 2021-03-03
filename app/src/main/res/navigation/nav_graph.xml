@@ -65,6 +65,9 @@
         <action
             android:id="@+id/action_listUnitsFragment_to_unitDisplayFragment"
             app:destination="@id/unitDisplayFragment" />
+        <action
+            android:id="@+id/action_listUnitsFragment_to_mostrarUnitFragment"
+            app:destination="@id/mostrarUnitFragment" />
     </fragment>
     <fragment
         android:id="@+id/createTeamFragment"
@@ -126,4 +129,9 @@
             android:id="@+id/action_loginFragment_to_forgotPswdFragment"
             app:destination="@id/forgotPswdFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/mostrarUnitFragment"
+        android:name="com.example.myapplication.MostrarUnitFragment"
+        android:label="fragment_mostrar_unit"
+        tools:layout="@layout/fragment_mostrar_unit" />
 </navigation>
