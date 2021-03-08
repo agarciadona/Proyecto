@@ -11,7 +11,9 @@ import androidx.lifecycle.MutableLiveData;
 import java.util.List;
 
 public class UnitViewModel extends AndroidViewModel {
+
     UnitRepositorio unitRepositorio;
+
     MutableLiveData<Uri> imagenSeleccionada = new MutableLiveData<>();
 
     public UnitViewModel(@NonNull Application application) {

@@ -1,27 +1,19 @@
 package com.example.myapplication;
 
-import android.os.Binder;
 import android.os.Bundle;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.LiveData;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import com.bumptech.glide.Glide;
 import com.example.myapplication.databinding.FragmentListUnitsBinding;
-import com.example.myapplication.databinding.FragmentUnitDisplayBinding;
 import com.example.myapplication.databinding.ViewholderUnitlistBinding;
-
 import java.util.List;
 
 public class ListUnitsFragment extends Fragment {
@@ -74,7 +66,7 @@ public class ListUnitsFragment extends Fragment {
             holder.binding.nombre.setText(unit.nombre);
             holder.binding.apodo.setText(unit.apodo);
 
-            Glide.with(holder.itemView).load(unit.fotoUnit);
+            Glide.with(holder.itemView).load(unit.fotoUnit).into(holder.binding.fotoUnit);
         }
 
         @Override

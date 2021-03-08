@@ -1,9 +1,8 @@
 package com.example.myapplication;
 
-import android.content.Intent;
+
 import android.net.Uri;
 import android.os.Bundle;
-
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.Nullable;
@@ -13,7 +12,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.lifecycle.ViewModelProvider;
-import androidx.lifecycle.ViewModelStoreOwner;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
@@ -53,10 +51,13 @@ public class AnadirUnitFragment extends Fragment {
             String apodo = binding.apodo.getText().toString();
 
             unitViewModel.insertar(nombre, apodo, imagenSeleccionada);
+
             navController.popBackStack();
 
         });
     }
+
+
 
     private void abrirGaleria(){
 
