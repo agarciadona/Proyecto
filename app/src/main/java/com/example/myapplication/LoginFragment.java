@@ -15,7 +15,7 @@ import com.thekhaeng.pushdownanim.PushDownAnim;
 
 import static com.thekhaeng.pushdownanim.PushDownAnim.MODE_SCALE;
 
-public class loginFragment extends Fragment {
+public class LoginFragment extends Fragment {
 
     private FragmentLoginBinding binding;
     NavController navController;

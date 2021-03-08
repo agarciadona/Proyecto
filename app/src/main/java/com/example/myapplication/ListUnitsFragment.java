@@ -23,7 +23,7 @@ import java.util.List;
 public class ListUnitsFragment extends Fragment {
 
     private FragmentListUnitsBinding binding;
-    private UnitListViewModel unitsViewModel;
+
     NavController navController;
 
     @Override
@@ -36,56 +36,13 @@ public class ListUnitsFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         navController = Navigation.findNavController(view);
 
-       UnitAdapter unitAdapter = new UnitAdapter();
-        binding.recyclerView.setAdapter(unitAdapter);
+        binding.imageButton3.setOnClickListener(v -> navController.popBackStack());
 
-        unitsViewModel.obtener().observe(getViewLifecycleOwner(), new Observer<List<UnitList>>() {
-            @Override
-            public void onChanged(List<UnitList> units) {
-               unitAdapter.establecerLista(units);
-            }
-        });
+        binding.irAInsertarAlbum.setOnClickListener(v ->{
+        navController.navigate(R.id.action_listUnitsFragment_to_mostrarUnitFragment);
 
-        binding.imageButton3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                navController.popBackStack();
-            }
-        });
-
+        } );
     }
 
-        class UnitAdapter extends RecyclerView.Adapter<UnitListViewHolder>{
-            List<UnitList> units;
-            @NonNull
-            @Override
-            public UnitListViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-                return new UnitListViewHolder(ViewholderUnitlistBinding.inflate(getLayoutInflater(), parent, false));
-            }
-            @Override
-            public void onBindViewHolder(@NonNull UnitListViewHolder holder, int position) {
-                UnitList unitList = units.get(position);
-                holder.binding.nombre.setText(unitList.foto);
-                holder.binding.valoracion.setRating(unitList.valoracion);
-            }
-            @Override
-            public int getItemCount() {
-                return units != null ? units.size() : 0;
-            }
-            public void establecerLista(List<UnitList> units){
-                this.units = units;
-                notifyDataSetChanged();
-            }
 
         }
-
-    class UnitListViewHolder extends RecyclerView.ViewHolder{
-        private final ViewholderUnitlistBinding binding;
-
-        public UnitListViewHolder(ViewholderUnitlistBinding binding) {
-            super(binding.getRoot());
-            this.binding = binding;
-        }
-    }
-
-}
