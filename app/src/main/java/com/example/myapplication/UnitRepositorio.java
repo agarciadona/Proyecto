@@ -10,18 +10,16 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
 public class UnitRepositorio {
+
     Executor executor = Executors.newSingleThreadExecutor();
-    private final BaseDeDatos.UnitsDao unitsDao;
+    BaseDeDatos.UnitsDao unitsDao;
 
     public UnitRepositorio(Application application) {
         unitsDao = BaseDeDatos.getInstance(application).obtenerUnitsdao();
     }
 
-    public void insertar(String nombre, String apodo, Uri imagenSeleccionada) {
-        executor.execute(()->{
-            unitsDao.insertar(new Unit(nombre,apodo,imagenSeleccionada.toString()));
-        });
-
+    void insertar(String nombre, String apodo, Uri imagenSeleccionada) {
+            executor.execute(()-> unitsDao.insertar(new Unit(nombre,apodo,imagenSeleccionada.toString())));
     }
 
     public LiveData<List<Unit>> obtener() {

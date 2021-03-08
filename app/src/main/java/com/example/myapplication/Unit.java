@@ -7,15 +7,14 @@ import androidx.room.PrimaryKey;
 public class Unit {
     @PrimaryKey(autoGenerate = true)
      int id;
-
     String nombre;
     String apodo;
-    String foto;
+    String fotoUnit;
 
-    public Unit(String nombre, String apodo, String foto) {
+    public Unit(String nombre, String apodo, String fotoUnit) {
         this.nombre = nombre;
         this.apodo = apodo;
-        this.foto = foto;
+        this.fotoUnit = fotoUnit;
     }
 
 }

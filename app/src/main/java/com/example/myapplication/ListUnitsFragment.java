@@ -74,7 +74,7 @@ public class ListUnitsFragment extends Fragment {
             holder.binding.nombre.setText(unit.nombre);
             holder.binding.apodo.setText(unit.apodo);
 
-            Glide.with(holder.itemView).load(unit.foto);
+            Glide.with(holder.itemView).load(unit.fotoUnit);
         }
 
         @Override
