@@ -3,6 +3,9 @@ package com.example.myapplication;
 import android.app.Application;
 import android.net.Uri;
 
+import androidx.lifecycle.LiveData;
+
+import java.util.List;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
@@ -21,4 +24,7 @@ public class UnitRepositorio {
 
     }
 
+    public LiveData<List<Unit>> obtener() {
+        return unitsDao.obtener();
+    }
 }

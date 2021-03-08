@@ -68,7 +68,7 @@ public class AnadirUnitFragment extends Fragment {
     }
     private final ActivityResultLauncher<String> lanzadorGaleria =
             registerForActivityResult(new ActivityResultContracts.GetContent(), uri ->{
-                //unitViewModel.establecerImagenSeleccionada(uri);
+                unitViewModel.establecerImagenSeleccionada(uri);
                 imagenSeleccionada = uri;
                 Glide.with(requireView()).load(uri).into(binding.fotoUnit);
             });

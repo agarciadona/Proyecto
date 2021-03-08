@@ -10,12 +10,12 @@ public class Unit {
 
     String nombre;
     String apodo;
-    String portada;
+    String foto;
 
-    public Unit(String nombre, String apodo, String portada) {
+    public Unit(String nombre, String apodo, String foto) {
         this.nombre = nombre;
         this.apodo = apodo;
-        this.portada = portada;
+        this.foto = foto;
     }
 
 }
